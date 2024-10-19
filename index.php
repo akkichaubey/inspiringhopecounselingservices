@@ -14,6 +14,8 @@
             <h1>Header 1</h1>
         </div>
     </div>
+
+    <div class="div">Test</div>
     <!--Footer Start-->
     <?php include("include/footer.php"); ?>
     <?php include("include/script.php"); ?>
