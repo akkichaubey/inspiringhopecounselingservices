@@ -4,4 +4,7 @@
 <script src="assets/js/ScrollTrigger.min.js" defer></script>
 <script src="assets/js/lenis.min.js" defer></script>
 <!-- gsap -->
+<script src="assets/js/swiper-bundle.min.js" defer></script>
+<script src="assets/js/popper.min.js" defer></script>
+<script src="assets/js/bootstrap.min.js" defer></script>
 <script src="assets/js/setting.js" defer></script>

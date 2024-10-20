@@ -1,4 +1,6 @@
 .header-wrap {
+  position: relative;
+  z-index: 99;
   header {
     position: fixed;
     top: 0;
@@ -99,29 +101,36 @@
         position: fixed;
         top: 0;
         right: 0;
+        height: 100%;
         min-height: 100vh;
         background: $white;
         width: 320px;
         padding: 45px 15px 80px;
         transition: all 0.3s ease-in-out;
       }
+      @include breakpoint(max, $media-sm) {
+        width: 300px;
+      }
       .menu-toggle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding: 11px 15px;
-        button {
-          display: inline-flex;
-          color: $secondary;
+        @include breakpoint(max, $media-lg) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding: 11px 15px;
+          button {
+            display: inline-flex;
+            color: $secondary;
+          }
         }
       }
       .menu {
         @include breakpoint(max, $media-lg) {
           height: 100%;
           overflow: auto;
+          scroll-behavior: auto !important;
         }
         li:is(.current-menu-item, .current-menu-parent, :hover) {
           a {
@@ -129,7 +138,7 @@
           }
         }
         > ul {
-          @include breakpoint(min, $media-xxl-min) {
+          @include breakpoint(min, $media-lg-min) {
             display: flex;
             flex-wrap: wrap;
             column-gap: get-vw(15px, 34px);
@@ -175,7 +184,7 @@
         @include breakpoint(max, $media-lg) {
           right: -320px;
         }
-        @include breakpoint(max, $media-md) {
+        @include breakpoint(max, $media-sm) {
           right: -300px;
         }
       }
@@ -199,6 +208,9 @@
         padding: 15px 25px;
       }
       .header-menu {
+        @include breakpoint(max, $media-lg) {
+          top: 42px;
+        }
         .menu {
           > ul {
             > li {

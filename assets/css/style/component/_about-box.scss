@@ -1,0 +1,138 @@
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: get-vw(40px, 50px);
+  overflow: hidden;
+  .column-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    > .col {
+      width: 100%;
+      flex: initial;
+      @include breakpoint(min, $media-md-min) {
+        width: 50%;
+      }
+      &.right {
+        @include breakpoint(min, $media-md-min) {
+          padding-left: 93px;
+        }
+      }
+    }
+  }
+  .img-wrap {
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: hard-light;
+    }
+
+    &.about-gallery {
+      padding-left: get-vw(20px, 103px);
+    }
+    &.about-img {
+      overflow: hidden;
+      padding-bottom: 72.918%;
+      border-radius: 0 get-vw(40px, 150px) 0 get-vw(40px, 150px);
+      &::after {
+        background: $dark-light;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content-box {
+    @include breakpoint(min, $media-md-min) {
+      max-width: 665px;
+    }
+  }
+  .inner-section {
+    &:nth-child(even) {
+      .column-wrap {
+        flex-direction: row-reverse;
+        > .col {
+          &.right {
+            @include breakpoint(min, $media-md-min) {
+              padding: 0 93px 0 0;
+            }
+          }
+        }
+      }
+    }
+    &--choose-us {
+      .img-wrap {
+        &::after {
+          background: $primary-light;
+        }
+      }
+    }
+  }
+  .about-gallery {
+    position: relative;
+    .about-primary {
+      max-width: 86%;
+      padding-bottom: 83%;
+      border-radius: get-vw(20px, 60px) 0px get-vw(40px, 150px) 0px;
+      &::after {
+        background: $dark-light;
+      }
+    }
+    .about-secondary {
+      max-width: 69.31%;
+      padding-bottom: 63%;
+      margin: -261px -31px 0 auto;
+      border: get-vw(8px, 20px) solid $white;
+      border-radius: get-vw(60px, 120px) 0px get-vw(60px, 120px) 0px;
+      @include breakpoint(max, $media-xxl) {
+        margin-top: -200px;
+      }
+      @include breakpoint(max, $media-xl) {
+        margin-top: -240px;
+      }
+      @include breakpoint(max, $media-md) {
+        margin-right: -8px;
+      }
+      @include breakpoint(max, $media-sm) {
+        margin-top: -100px;
+        margin-right: -8px;
+      }
+      &::after {
+        opacity: 0.4;
+        background: $primary-dark;
+      }
+    }
+    .shape {
+      position: absolute;
+      left: 0%;
+      bottom: 18%;
+      z-index: -1;
+      max-width: get-vw(100px, 317px);
+      @include breakpoint(max, $media-md) {
+        max-width: 250px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content-box {
+    .btn-wrap {
+      padding-top: 35px;
+      .btn {
+        min-width: 270px;
+      }
+    }
+  }
+  &.home-about {
+    .inner-section {
+      &:first-child {
+        padding-bottom: get-vw(20px, 90px);
+      }
+    }
+  }
+}

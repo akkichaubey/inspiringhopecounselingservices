@@ -40,14 +40,14 @@
                     <li>
                         <a href="#">
                             <svg class="icon" width="26" height="26">
-                                <use xlink:href="assets/images/svgsprit.svg#sample-icon"></use>
+                                <use xlink:href="assets/images/svgsprit.svg#facebook-icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <svg class="icon" width="26" height="26">
-                                <use xlink:href="assets/images/svgsprit.svg#sample-icon"></use>
+                                <use xlink:href="assets/images/svgsprit.svg#instagram-icon"></use>
                             </svg>
                         </a>
                     </li>

@@ -333,10 +333,10 @@
     <!-- home-service -->
 
     <!-- home-faq-testimonial -->
-    <div class="home-faq-testimonial pt-170 pb-100"
+    <div class="home-faq-testimonial pt-170"
         style="background-image: url(./assets/images/home-faq-testimonial-bg.webp);">
         <div class="container">
-            <div class="row gap-x-30">
+            <div class="row gap-x-30 align-items-center">
                 <div class="col-lg-6">
                     <div class="title-wrap">
                         <div class="sub-title">FAQs</div>
@@ -347,7 +347,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-1">
-                                        Do you accept insurance? <span class="icon"></span></button>
+                                        Do you accept insurance?</button>
                                 </h2>
                                 <div id="homeFaq-1" class="accordion-collapse collapse show" data-bs-parent="#homeFaq">
                                     <div class="accordion-body">
@@ -362,7 +362,7 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#homeFaq-2">
-                                        What types of counseling do you offer? <span class="icon"></span>
+                                        What types of counseling do you offer?
                                     </button>
                                 </h2>
                                 <div id="homeFaq-2" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
@@ -378,7 +378,7 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#homeFaq-3">
-                                        How do I know if therapy is right for me? <span class="icon"></span>
+                                        How do I know if therapy is right for me?
                                     </button>
                                 </h2>
                                 <div id="homeFaq-3" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
@@ -397,25 +397,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="testimonial-content-box">
-                        <div class="title-wrap">
-                            <div class="sub-title">Testimonials</div>
+                    <div class="testimonial-box large">
+                        <div class="icon-box">
+                            <svg class="icon" width="90" height="90">
+                                <use xlink:href="./assets/images/svgsprit.svg#qoute-icon"></use>
+                            </svg>
                         </div>
-                        <div class="testimonial-box large">
-                            <div class="icon-box">
-                                <svg class="icon" width="90" height="90">
-                                    <use xlink:href="./assets/images/svgsprit.svg#qoute-icon"></use>
-                                </svg>
-                            </div>
-                            <p>I’ve never felt more supported and understood
-                                than I do with my counselor at Inspiring Hope.
-                                The non-judgmental atmosphere and
-                                personalized care are incredible!</p>
-                            <div class="name">- Jessica R.</div>
-                        </div>
-                        <div class="btn-wrap pt-50">
-                            <a href="#" class="btn">Read More</a>
-                        </div>
+                        <p>I’ve never felt more supported and understood
+                            than I do with my counselor at Inspiring Hope.
+                            The non-judgmental atmosphere and
+                            personalized care are incredible!</p>
+                        <div class="name">- Jessica R.</div>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,6 @@
+// Register GSAP ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
 //lenis scroll
 const lenis = new Lenis({
   duration: 1.5,
@@ -13,9 +16,6 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
-
-// Ensure GSAP and ScrollTrigger are properly registered
-gsap.registerPlugin(ScrollTrigger);
 
 // Select elements for each animation type
 const fadeUpElements = document.querySelectorAll('[data-gsap="fadeUp"]');
@@ -172,4 +172,18 @@ jQuery(document).ready(function () {
       lenis.start();
     }
   });
+});
+
+var meetTeamSlider = new Swiper(".meet-team-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  pagination: {
+    el: ".meet-team-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 40,
+    },
+  },
 });
