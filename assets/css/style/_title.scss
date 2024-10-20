@@ -1,55 +1,56 @@
 .h1 {
-  font-size: get-vw(34px, 78px);
+  font-size: get-vw(34px, 92px);
   line-height: 1.2;
   @include breakpoint(max, $media-sm) {
     line-height: 1.1875;
   }
 }
 .h2 {
-  font-size: get-vw(32px, 60px);
+  font-size: get-vw(32px, 50px);
   line-height: 1.2;
   @include breakpoint(max, $media-sm) {
     line-height: 1.03125;
   }
 }
 .h3 {
-  font-size: get-vw(30px, 36px);
+  font-size: get-vw(28px, 32px);
   line-height: 1.1;
   @include breakpoint(max, $media-sm) {
     line-height: 1.0714;
   }
 }
 .h4 {
-  font-size: get-vw(22px, 24px);
+  font-size: get-vw(26px, 30px);
   line-height: 1.25;
 }
 .h5 {
-  font-size: 22px;
+  font-size: get-vw(22px, 24px);
   line-height: 1.11;
 }
 .h6 {
-  font-size: 20px;
+  font-size: get-vw(18px, 20px);
   line-height: 1.6;
 }
-.heading-50 {
-  font-size: get-vw(28px, 50px);
-  line-height: 1;
-  @include breakpoint(max, $media-sm) {
-    line-height: 1.1428;
-  }
+.text-lg {
+  font-size: get-vw(20px, 30px);
+  line-height: 1.4;
+}
+
+.text-md {
+  font-size: get-vw(18px, 26px);
+  line-height: 1.615;
 }
 
 .text-sm {
-  font-size: get-vw(17px, 20px);
-  line-height: 1.5;
-}
-.text-md {
-  font-size: get-vw(18px, 28px);
-  line-height: 2;
+  font-size: get-vw(16px, 20px);
+  line-height: 1.6;
 }
 
 .title-wrap {
   padding-bottom: 18px;
+  .sub-ttle {
+    font-size: get-vw(20px, 30px);
+  }
   .h2 {
     font-weight: 700;
     letter-spacing: -0.7px;

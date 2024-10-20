@@ -147,7 +147,7 @@ jQuery(document).ready(function () {
   });
 
   var headerwrap = jQuery(".header-wrap");
-  var headerTop = jQuery(headerwrap).find(".header-top");
+  var headerTop = jQuery(headerwrap).find(".head-top");
 
   jQuery(window).on("load scroll", function () {
     var headerTopHeight = headerTop.innerHeight();
@@ -164,9 +164,9 @@ jQuery(document).ready(function () {
   });
 
   jQuery(".menu-toggle button, .header-overlay").on("click", function () {
-    jQuery(".side-menu").toggleClass("active");
+    jQuery(".header-menu").toggleClass("active");
     jQuery(".header-overlay").toggleClass("active");
-    if (jQuery(".side-menu").hasClass("active")) {
+    if (jQuery(".header-menu").hasClass("active")) {
       lenis.stop();
     } else {
       lenis.start();

@@ -1,9 +1,9 @@
 .btn {
   font-size: get-vw(16px, 18px);
-  line-height: 2.222;
+  line-height: 1;
   color: $white;
-  font-weight: 400;
-  padding: get-vw(10px, 21px) get-vw(25px, 40px);
+  font-weight: 500;
+  padding: get-vw(15px, 29px) get-vw(25px, 54px);
   box-shadow: none;
   gap: get-vw(14px, 16px);
   display: inline-flex;
@@ -13,8 +13,6 @@
   border-radius: 100px;
   border: 1px solid transparent;
   @include transition(all 0.3s ease-in-out);
-  min-height: get-vw(62px, 84px);
-  min-width: get-vw(180px, 245px);
   &:is(:focus, :hover, :active) {
     color: $primary;
     background: transparent;

@@ -105,6 +105,8 @@
   @return clamp($font-min, $calculated-vw, $font);
 }
 
+// get-vw(15px, 30px)
+
 // output with max
 // @function get-vw($font-max, $font) {
 // 	$vw-viewport: 1500;

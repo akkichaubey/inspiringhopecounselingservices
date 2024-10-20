@@ -29,10 +29,6 @@ $green: #1cc88a !default;
 $teal: #20c9a6 !default;
 $cyan: #006064 !default;
 
-// scss-docs-start theme-colors-map
-$primary: #c74c89;
-$dark: #000c27;
-
 // Custom Colors
 $input-border-color: #bfbfbf;
 $input-border-hover-color: #757575;
@@ -48,33 +44,13 @@ $smokey-grey-200: #ebebeb;
 $body-color: #4d4d4d !default;
 $dark-color: #1c1c1c;
 
-$secondary-100: #67bfc3;
-$secondary-200: #1ba0b5;
+// scss-docs-start theme-colors-map
+$primary: #c84c8a;
+$secondary: #000c27;
+$dark: #002359;
+$dark-light: #265297;
 
-$pink: #eabad0;
-$green: #596124;
-$green-dark: #3f4517;
-$green-900: #78803e;
-$brown: #a28152;
-$green-100: #dbe2ab;
-$light-slate: #cefeff;
-
-$grey-100: #efefef;
-$grey-200: #ededed;
-$grey-300: #cbcbcb;
-$grey-400: #bfbfbf;
-$grey-500: #b2b4b7;
-$grey-600: #b0b0b0;
-$grey-700: #9e9e9e;
-$grey-800: #b5b5b5;
-$grey-900: #c0c0c0;
-
-$black-100: #fbfafa;
-$black-200: #a2a1a1;
-$black-300: #cacaca;
-
-$sea-green: #065c5e;
-$sea-green-lignt: #0c634d;
+$grey-100: #f1f1f1;
 
 // Brand Colors
 $brand-google: #ea4335 !default;
