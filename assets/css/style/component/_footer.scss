@@ -1,2 +1,98 @@
+.newsletter {
+  background: $primary;
+  padding: get-vw(30px, 60px) get-vw(30px, 105px);
+  border-radius: get-vw(40px, 130px) 0 get-vw(40px, 130px) 0;
+  .title {
+    max-width: 669px;
+    padding-bottom: get-vw(20px, 36px);
+    h3 {
+      color: $white;
+      padding-bottom: 15px;
+    }
+    p {
+      color: $white;
+    }
+  }
+  .custom-form {
+    .form-row {
+      margin: 0 -10px;
+      @include breakpoint(max, $media-sm) {
+        flex-direction: column;
+      }
+      .col {
+        padding: 0 10px;
+        &.btn-wrap {
+          flex: initial;
+          flex-shrink: 0;
+          width: initial;
+        }
+      }
+      .input-box {
+        .form-control {
+          font-size: get-vw(16px, 20px);
+          padding: 10px get-vw(20px, 50px);
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
 .footer-wrap {
+  background: no-repeat center/ cover;
+  background-position-y: 164px;
+  footer {
+    .footer-menu {
+      padding-bottom: 60px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 105px;
+        justify-content: center;
+        li {
+          display: inline-flex;
+          position: relative;
+          &:not(:last-child) {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 1px;
+              height: 18px;
+              right: -52px;
+              background: #fff;
+              margin: auto 0;
+              opacity: 0.7;
+            }
+          }
+          a {
+            color: rgba($white, 0.7);
+            letter-spacing: 1.2px;
+          }
+        }
+      }
+      .contact-info {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -20px;
+          > li {
+            width: 33.333%;
+            padding: 0 20px;
+            a {
+              color: $white;
+              .icon {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-top {
+    }
+    .footer-center {
+      padding: get-vw(45px, 77px) 0 get-vw(40px, 60px);
+    }
+  }
 }

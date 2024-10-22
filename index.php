@@ -423,6 +423,74 @@
     </div>
     <!-- home-faq-testimonial -->
 
+    <!-- home-blog -->
+    <div class="home-blog pt-160 pb-160">
+        <div class="shape">
+            <img src="./assets/images/home-blog-dot.webp" alt="shape" width="" height="">
+        </div>
+        <div class="container">
+            <div class="row gap-x-30">
+                <div class="col-lg-5">
+                    <div class="content-box">
+                        <div class="title-wrap">
+                            <div class="sub-title">Our Blog</div>
+                            <div class="sub-text text-lg">
+                                <p>Stay informed with our latest articles
+                                    on mental health, self-care, and
+                                    therapy tips. Our blog offers valuable
+                                    insights and resources to help you on
+                                    your journey.
+                                </p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="list">
+                        <li>
+                            <div class="box blog-box">
+                                <div class="img img-cover">
+                                    <img src="./assets/images/blog-1.webp" alt="img" width="" height="">
+                                </div>
+                                <div class="info">
+                                    <h3 class="h5"><a href="#">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit</a></h3>
+                                    <p>Donec commodo ultrices turpis, eu
+                                        posuere urna suscipit at. Praesent
+                                        lacus nisi, congue nec erat a</p>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-link primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box blog-box">
+                                <div class="img img-cover">
+                                    <img src="./assets/images/blog-1.webp" alt="img" width="" height="">
+                                </div>
+                                <div class="info">
+                                    <h3 class="h5"><a href="#">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit</a></h3>
+                                    <p>Donec commodo ultrices turpis, eu
+                                        posuere urna suscipit at. Praesent
+                                        lacus nisi, congue nec erat a</p>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-link primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home-blog -->
+
     <!--Footer Start-->
     <?php include("include/footer.php"); ?>
     <?php include("include/script.php"); ?>

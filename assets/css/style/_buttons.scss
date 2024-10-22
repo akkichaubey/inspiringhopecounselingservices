@@ -22,93 +22,95 @@
       box-shadow: none;
     }
   }
-  .icon-box {
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: $secondary;
-  }
-  &.btn-md {
-    min-height: get-vw(52px, 70px);
-    padding: get-vw(11px, 14px) get-vw(20px, 25px);
-  }
-  &.btn-sm {
-    min-height: get-vw(44px, 54px);
-    font-size: get-vw(14px, 16px);
-    padding: get-vw(4px, 8px) get-vw(18px, 22px);
-  }
-  &.btn-primary {
-    color: $white;
-    background: $primary;
-    &:is(:focus, :hover, :active) {
-      background: $white;
-      color: $primary;
-      border-color: $white;
-    }
-  }
+  // .icon-box {
+  //   display: grid;
+  //   place-items: center;
+  //   width: 40px;
+  //   height: 40px;
+  //   border-radius: 100%;
+  //   background: $secondary;
+  // }
+  // &.btn-md {
+  //   min-height: get-vw(52px, 70px);
+  //   padding: get-vw(11px, 14px) get-vw(20px, 25px);
+  // }
+  // &.btn-sm {
+  //   min-height: get-vw(44px, 54px);
+  //   font-size: get-vw(14px, 16px);
+  //   padding: get-vw(4px, 8px) get-vw(18px, 22px);
+  // }
+  // &.btn-primary {
+  //   color: $white;
+  //   background: $primary;
+  //   &:is(:focus, :hover, :active) {
+  //     background: $white;
+  //     color: $primary;
+  //     border-color: $white;
+  //   }
+  // }
   &.btn-secondary {
-    background: $secondary;
-    &:is(:focus, :hover, :active) {
-      color: $secondary;
-      background: transparent;
-      border-color: $secondary;
-    }
-  }
-  &.btn-outline-primary {
-    background: transparent;
-    color: $primary;
-    border-color: $primary;
-    &:is(:focus, :hover, :active) {
-      color: $white;
-      background: $primary;
-    }
-  }
-  &.btn-outline-secondary {
-    color: $secondary;
-    background: transparent;
-    border-color: $secondary;
-    &:is(:focus, :hover, :active) {
-      color: $white;
-      background: $secondary;
-    }
-  }
-  &.btn-white {
-    color: $primary;
-    border-color: $white;
-    background: $white;
-    &:is(:focus, :hover, :active) {
-      color: $white;
-      border-color: $white;
-      background: transparent;
-    }
-  }
-  &.btn-outline-white {
     color: $white;
-    border-color: $white;
-    background: transparent;
+    background: $dark;
     &:is(:focus, :hover, :active) {
-      color: $primary;
-      border-color: $white;
-      background: $white;
-    }
-  }
-  &.btn-black {
-    color: $white;
-    border-color: $black;
-    background: $black;
-    &:is(:focus, :hover, :active) {
-      color: $black;
-      border-color: $black;
+      color: $dark;
       background: transparent;
+      border-color: $dark;
     }
   }
+  // &.btn-outline-primary {
+  //   background: transparent;
+  //   color: $primary;
+  //   border-color: $primary;
+  //   &:is(:focus, :hover, :active) {
+  //     color: $white;
+  //     background: $primary;
+  //   }
+  // }
+  // &.btn-outline-secondary {
+  //   color: $secondary;
+  //   background: transparent;
+  //   border-color: $secondary;
+  //   &:is(:focus, :hover, :active) {
+  //     color: $white;
+  //     background: $secondary;
+  //   }
+  // }
+  // &.btn-white {
+  //   color: $primary;
+  //   border-color: $white;
+  //   background: $white;
+  //   &:is(:focus, :hover, :active) {
+  //     color: $white;
+  //     border-color: $white;
+  //     background: transparent;
+  //   }
+  // }
+  // &.btn-outline-white {
+  //   color: $white;
+  //   border-color: $white;
+  //   background: transparent;
+  //   &:is(:focus, :hover, :active) {
+  //     color: $primary;
+  //     border-color: $white;
+  //     background: $white;
+  //   }
+  // }
+  // &.btn-black {
+  //   color: $white;
+  //   border-color: $black;
+  //   background: $black;
+  //   &:is(:focus, :hover, :active) {
+  //     color: $black;
+  //     border-color: $black;
+  //     background: transparent;
+  //   }
+  // }
 }
 
 .btn-link {
   font-size: 20px;
-  line-height: 1.3;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
   font-weight: 700;
   color: $primary;
   text-decoration: none;

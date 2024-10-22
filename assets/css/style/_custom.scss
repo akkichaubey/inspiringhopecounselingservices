@@ -160,6 +160,39 @@
       }
     }
   }
+  &.blog-box {
+    padding: 15px 15px 30px;
+    border-radius: get-vw(25px, 56px);
+    .img {
+      padding-bottom: 75%;
+      border-radius: get-vw(25px, 56px);
+    }
+    .info {
+      padding: get-vw(20px, 30px) 15px 0;
+      h3 {
+        color: $secondary;
+        padding-bottom: 16px;
+        letter-spacing: -0.6px;
+        a {
+          color: currentColor;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+      p {
+        color: $secondary;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .btn-wrap {
+        padding-top: 14px;
+      }
+    }
+  }
 }
 
 .swiper-pagination {

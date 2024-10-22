@@ -1,0 +1,31 @@
+.custom-form {
+  .form-row {
+    display: flex;
+    margin: 0 -15px;
+    row-gap: 20px;
+    .col {
+      padding: 0 15px;
+    }
+    .btn-wrap {
+      .btn {
+        height: get-vw(50px, 78px);
+        @include breakpoint(min, $media-xl-min) {
+          min-width: 270px;
+        }
+      }
+    }
+    .input-box {
+      .form-control {
+        width: 100%;
+        height: get-vw(50px, 78px);
+        font-size: get-vw(16px, 18px);
+        padding: 10px get-vw(20px, 40px);
+        border-radius: 100px;
+        border: 1px solid #c7c9cf;
+      }
+    }
+    .col {
+      width: 100%;
+    }
+  }
+}

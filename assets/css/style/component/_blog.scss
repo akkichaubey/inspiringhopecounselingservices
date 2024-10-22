@@ -1,0 +1,45 @@
+.home-blog {
+  position: relative;
+  z-index: 1;
+  .shape {
+    position: absolute;
+    right: get-vw(15px, 70px);
+    bottom: get-vw(30px, 115px);
+    z-index: -1;
+  }
+  .title-wrap {
+    .sub-text {
+      padding-top: 14px;
+      p {
+        letter-spacing: -0.5px;
+        font-weight: 600;
+        color: $secondary;
+      }
+    }
+    .btn-wrap {
+      padding-top: 27px;
+      .btn {
+        min-width: 270px;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    row-gap: 30px;
+    @include breakpoint(max, $media-xl) {
+      margin: 0 -15px;
+    }
+    li {
+      width: 50%;
+      padding: 0 20px;
+      @include breakpoint(max, $media-xl) {
+        padding: 0 15px;
+      }
+      @include breakpoint(max, $media-xs) {
+        width: 100%;
+      }
+    }
+  }
+}
