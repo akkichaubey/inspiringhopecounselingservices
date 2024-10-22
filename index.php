@@ -31,6 +31,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-img-wrap text-end">
+                        <div class="shape">
+                            <img src="./assets/images/banner-shape.webp" alt="" width="" height="">
+                        </div>
                         <div class="banner-img brd-155" data-gsap="fadeUp">
                             <img src="./assets/images/banner-img.webp" alt="img" width="" height="">
                         </div>
@@ -433,8 +436,8 @@
                 <div class="col-lg-5">
                     <div class="content-box">
                         <div class="title-wrap">
-                            <div class="sub-title">Our Blog</div>
-                            <div class="sub-text text-lg">
+                            <div class="sub-title" data-gsap="fadeUp">Our Blog</div>
+                            <div class="sub-text text-lg" data-gsap="fadeUp">
                                 <p>Stay informed with our latest articles
                                     on mental health, self-care, and
                                     therapy tips. Our blog offers valuable
@@ -442,7 +445,7 @@
                                     your journey.
                                 </p>
                             </div>
-                            <div class="btn-wrap">
+                            <div class="btn-wrap" data-gsap="fadeUp">
                                 <a href="#" class="btn">Read More</a>
                             </div>
                         </div>
@@ -451,7 +454,7 @@
                 <div class="col-lg-7">
                     <ul class="list">
                         <li>
-                            <div class="box blog-box">
+                            <div class="box blog-box" data-gsap="fadeUp">
                                 <div class="img img-cover">
                                     <img src="./assets/images/blog-1.webp" alt="img" width="" height="">
                                 </div>
@@ -468,7 +471,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="box blog-box">
+                            <div class="box blog-box" data-gsap="fadeUp">
                                 <div class="img img-cover">
                                     <img src="./assets/images/blog-1.webp" alt="img" width="" height="">
                                 </div>

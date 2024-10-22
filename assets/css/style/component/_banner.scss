@@ -36,9 +36,24 @@
   &.hero-banner {
     padding: get-vw(180px, 344px) 0 get-vw(70px, 102px);
     .banner-img-wrap {
+      position: relative;
       padding-right: get-vw(15px, 42px);
       @include breakpoint(max, $media-md) {
         padding-top: 30px;
+      }
+      .shape {
+        max-width: get-vw(100px, 209px);
+        position: absolute;
+        top: -93px;
+        left: -20px;
+        @include breakpoint(max, $media-md) {
+          top: -63px;
+          left: -40px;
+        }
+        @include breakpoint(max, $media-sm) {
+          top: -13px;
+          left: -40px;
+        }
       }
       .banner-img {
         display: inline-block;

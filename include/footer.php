@@ -1,8 +1,14 @@
 <div class="footer-wrap" style="background-image: url(assets/images/footer-bg.webp);">
+    <div class="shape">
+        <img src="assets/images/bird-shape.webp" alt="" width="" height="">
+    </div>
     <footer>
         <div class="footer-top">
             <div class="container">
-                <div class="newsletter">
+                <div class="newsletter" data-gsap="fadeUp">
+                    <div class="shape">
+                        <img src="assets/images/mail-shape.webp" alt="" width="" height="">
+                    </div>
                     <div class="title">
                         <h3>Subscribe for Updates</h3>
                         <div class="sub-text text-sm">
@@ -31,7 +37,7 @@
         </div>
         <div class="footer-center">
             <div class="container">
-                <div class="footer-menu">
+                <div class="footer-menu" data-gsap="fadeUp">
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -50,7 +56,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact-info">
+                <div class="contact-info" data-gsap="fadeUp">
                     <ul>
                         <li>
                             <a href="tel:1234567890">
@@ -78,17 +84,17 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="social">
+                <ul class="social" data-gsap="fadeUp">
                     <li>
                         <a href="#">
-                            <svg class="icon" width="26" height="26">
+                            <svg class="icon" width="30" height="30">
                                 <use xlink:href="assets/images/svgsprit.svg#facebook-icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <svg class="icon" width="26" height="26">
+                            <svg class="icon" width="30" height="30">
                                 <use xlink:href="assets/images/svgsprit.svg#instagram-icon"></use>
                             </svg>
                         </a>
@@ -98,12 +104,12 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="copyright">
+                <div class="copyright" data-gsap="fadeUp">
                     &copy; All Copyright 2024. <a href="#">inspiringhopecounselingservices</a> <a href="#">Privacy
                         Policy</a>
                     | <a href="#">Terms of Service</a>
                 </div>
-                <div class="design-by">
+                <div class="design-by" data-gsap="fadeUp">
                     Designed By : <a href="#">webstrategyplus</a>
                 </div>
             </div>
