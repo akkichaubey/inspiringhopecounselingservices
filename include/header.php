@@ -8,7 +8,7 @@
                             <a href="tel:1234567890">
                                 <div class="icon-box">
                                     <svg class="icon" width="24" height="24">
-                                        <use xlink:href="assets/images/svgsprit.svg#sample-icon"></use>
+                                        <use xlink:href="assets/images/svgsprit.svg#call-icon"></use>
                                     </svg>
                                 </div>
                                 <span>(123) 456-7890</span>
@@ -18,7 +18,7 @@
                             <a href="malto:info@inspiringhopecounselingservices.com">
                                 <div class="icon-box">
                                     <svg class="icon" width="24" height="24">
-                                        <use xlink:href="assets/images/svgsprit.svg#sample-icon"></use>
+                                        <use xlink:href="assets/images/svgsprit.svg#email-icon"></use>
                                     </svg>
                                 </div>
                                 <span>info@inspiringhopecounselingservices.com</span>
@@ -28,7 +28,7 @@
                             <a href="#">
                                 <div class="icon-box">
                                     <svg class="icon" width="24" height="24">
-                                        <use xlink:href="assets/images/svgsprit.svg#sample-icon"></use>
+                                        <use xlink:href="assets/images/svgsprit.svg#location-icon"></use>
                                     </svg>
                                 </div>
                                 <span>123 Hope Lane, Erlanger, KY 41018</span>

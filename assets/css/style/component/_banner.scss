@@ -1,3 +1,25 @@
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
 .banner {
   min-height: 100vh;
   position: relative;
@@ -53,6 +75,10 @@
         @include breakpoint(max, $media-sm) {
           top: -13px;
           left: -40px;
+        }
+        img {
+          -webkit-animation: rotate 7s normal linear infinite;
+          animation: rotate 7s normal linear infinite;
         }
       }
       .banner-img {

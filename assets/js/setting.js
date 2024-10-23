@@ -1,16 +1,22 @@
 // Register GSAP ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-//lenis scroll
+//lenis scroll setup (initially stopped)
 const lenis = new Lenis({
   duration: 1.5,
-  smoothTouch: false,
+  touchMultiplier: 2,
+  smoothTouch: true,
   direction: "vertical",
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
-lenis.on("scroll", (e) => {
-  // console.log(e);
+lenis.stop(); // Stop Lenis initially
+
+// Start Lenis only after page load
+window.addEventListener("load", () => {
+  lenis.start(); // Start Lenis after page load
 });
+
+// Function to request animation frame for smooth scrolling
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -177,9 +183,14 @@ jQuery(document).ready(function () {
 var meetTeamSlider = new Swiper(".meet-team-slider", {
   slidesPerView: "auto",
   spaceBetween: 20,
+  speed: 1500,
   pagination: {
     el: ".meet-team-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     768: {

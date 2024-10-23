@@ -1,3 +1,24 @@
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 html {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -234,28 +255,6 @@ button:focus {
 }
 .bullet ol li ol ol {
   padding-left: 20px;
-}
-
-html.lenis,
-html.lenis body {
-  height: auto;
-  overflow-y: hidden;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
 }
 
 .h1 {
@@ -1035,6 +1034,23 @@ html.lenis body {
   color: #c84c8a;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
 .banner {
   min-height: 100vh;
   position: relative;
@@ -1098,6 +1114,9 @@ html.lenis body {
     top: -13px;
     left: -40px;
   }
+}
+.banner.hero-banner .banner-img-wrap .shape img {
+  animation: rotate 7s normal linear infinite;
 }
 .banner.hero-banner .banner-img-wrap .banner-img {
   display: inline-block;
@@ -1256,6 +1275,7 @@ html.lenis body {
 }
 
 .home-meet-team {
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
